@@ -1,3 +1,4 @@
+//adicionei esse coment√°rio
 /* -------------------------------------------------------------------------------------------------------------------- */
 // F28335 - Base Project
 /* -------------------------------------------------------------------------------------------------------------------- */
@@ -104,12 +105,12 @@ void main(void)
 
     InitCpuTimers();
 
-    // uC de 150MHz com interrupÁ„o a cada 1 segundo (em microsegundos)
+    // uC de 150MHz com interrup√ß√£o a cada 1 segundo (em microsegundos)
     #if (CPU_FQR_150MHZ)
     ConfigCpuTimer(&CpuTimer0, 150, 1000000); //aqui foi editado para 100 (estava em 1000000)
     #endif
 
-    //referente ‡ biblioteca DSP2833x_CpuTimers.h
+    //referente √† biblioteca DSP2833x_CpuTimers.h
     CpuTimer0Regs.TCR.all = 0x4000;
 
     // Enable CPU int1 which is connected to CPU-Timer 0
